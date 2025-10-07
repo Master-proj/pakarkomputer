@@ -46,7 +46,7 @@
             
             <li class="nav-item ">
               <!-- Button trigger modal -->
-              <button type="button" class="btn px-4 btn-secondary ml-5 logintombol" data-toggle="modal" data-target="#exampleModal">Log In</button>
+              <button type="button" class="btn px-4 btn-secondary ml-5 logintombol" data-toggle="modal" data-target="#exampleModal">Login</button>
               </button>
 
               <!-- Login -->
