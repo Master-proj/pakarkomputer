@@ -66,7 +66,7 @@
       </div>
     </section>
 
-    <section id="alur">
+    <section id="alur" style="margin-bottom: 50px;">
       <!--Content2-->
       <div id="konten2" class="container konten">
         <h2 style="font-weight: bold;text-align: center;">Alur Kerja Sistem Pakar Servis Komputer!</h2>
@@ -101,6 +101,8 @@
         </div>
       </div>
     </section>
+
+
     <!-- Footer -->
 <footer class="text-center text-lg-start text-dark" style="background-color: #f2f2f2; font-family: 'Poppins', sans-serif;">
   <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">

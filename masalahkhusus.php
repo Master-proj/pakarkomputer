@@ -1,84 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
     rel="stylesheet"
     href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-    crossorigin="anonymous"/>
-    <link
-    href="https://fonts.googleapis.com/css?family=Poppins:300,400,700&display=swap"
-    rel="stylesheet"/>
-    <link rel="stylesheet" href="custom.css" />
-    <title>Fix.CO</title>
+    crossorigin="anonymous"
+  />
+  <link
+    href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700&display=swap"
+    rel="stylesheet"
+  />
+  <title>Fix.CO - Masalah Khusus</title>
+
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(135deg, #f8faff 0%, #eef3ff 100%);
+      color: #333;
+      overflow-x: hidden;
+    }
+
+    .navbar {
+      background: #fff;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .test {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 90vh;
+    }
+
+    .question-container {
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+      padding: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 90%;
+      max-width: 1100px;
+    }
+
+    /* Bagian pertanyaan interaktif */
+    .question-box {
+      flex: 1;
+      padding-right: 40px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border-radius: 15px;
+      padding: 30px;
+    }
+
+    .question-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0, 123, 255, 0.15);
+      background-color: #f9fbff;
+    }
+
+    .question-box h2 {
+      font-weight: 700;
+      color: #222;
+      margin-bottom: 25px;
+      font-size: 1.8rem;
+    }
+
+    .btn {
+      border-radius: 10px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      font-size: 1.05rem;
+      padding: 10px 30px;
+    }
+
+    .btn-primary {
+      background-color: #007bff;
+      border: none;
+    }
+
+    .btn-primary:hover {
+      background-color: #0056b3;
+      transform: scale(1.05);
+    }
+
+    .btn-danger {
+      background-color: #dc3545;
+      border: none;
+    }
+
+    .btn-danger:hover {
+      background-color: #a71d2a;
+      transform: scale(1.05);
+    }
+
+    .image-box {
+      flex: 1;
+      text-align: right;
+    }
+
+    .image-box img {
+      width: 430px;
+      max-width: 100%;
+      border-radius: 10px;
+    }
+
+    /* Animasi masuk dari kiri */
+    @keyframes fadeInLeft {
+      from {
+        opacity: 0;
+        transform: translateX(-40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    .question-box {
+      animation: fadeInLeft 0.8s ease forwards;
+    }
+
+    @media (max-width: 992px) {
+      .question-container {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 25px;
+      }
+      .question-box {
+        padding-right: 0;
+      }
+      .image-box {
+        text-align: center;
+        margin-top: 30px;
+      }
+    }
+  </style>
 </head>
+
 <body>
-    <nav class="navbar py-2 navbar-expand-lg navbar-light">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="gambar/logobaru.png" width="147" alt="logo" />
-            </a>
-            <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-            >
-            <span class="navbar-toggler-icon"></span>
-            </button>
+  <!-- NAVBAR -->
+  <nav class="navbar py-2 navbar-expand-lg navbar-light">
+    <div class="container">
+    <a class="navbar-brand" href="#">
+          <h2>Pakar COM</h2>
+        </a>
+    </div>
+  </nav>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-                    <li>
-                        
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+  <!-- MAIN CONTENT -->
+  <section class="test">
+    <div class="question-container">
+      <!-- Kiri -->
+      <div class="question-box">
+        <h2>Apakah komputer Anda mengalami gejala berikut?</h2>
+        <form action="" method="post" enctype="multipart/form-data" role="form">
+          <input type="submit" class="btn btn-primary mr-3" name="ya" value="Ya">
+          <input type="submit" class="btn btn-danger" name="tidak" value="Tidak">
+        </form>
+      </div>
 
-    <section class="test mt-5">
-        <div class="container">
-            <div class="row">
-                <div class="col align-self-center">
-                    <h2 class="mb-4">Pertanyaan :</h2>
-                    <form action="" method="post" enctype="multipart/form-data" role="form">
-                        <input type="submit" class="btn btn-primary mr-2 px-4 py-2" name="ya" value="Ya">
-                        <input type="submit" class="btn btn-danger px-3 py-2" name="tidak" value="Tidak">
-                        <br>
-                    </form>
-                </div>
-                <div class="col d-none d-sm-block">
-                    <img width="500" src="gambar\alldesain.png" alt="hero" />
-                </div>
-            </div>
-        </div>
-    </section>
+      <!-- Kanan (gambar dekoratif, tanpa animasi) -->
+      <div class="image-box">
+        <img src="gambar/alldesain.png" alt="Ilustrasi visual" />
+      </div>
+    </div>
+  </section>
+
+  <!-- JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 </body>
-
-<script
-    src="https://code.jquery.com/jquery-3.4.1.js"
-    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-    crossorigin="anonymous"
-></script>
-<script
-    src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-    crossorigin="anonymous"
-></script>
-<script
-    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-    crossorigin="anonymous"
-></script>
-<script
-    src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-    crossorigin="anonymous"
-></script>
 </html>

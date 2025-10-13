@@ -46,9 +46,10 @@
       </div>
     </nav>
 <body>
+<section id="alur" style="margin-bottom: 80px;">
     <!-- Content2 -->
 <div class="container mt-5">
-  <h2 style="font-weight: bold; text-align: center;">Masalah Umum</h2>
+  <h2 style="font-weight: bold; text-align: center;">Pilih Masalah Umum</h2>
   <div class="row justify-content-center g-3">
 
     <!-- Card 1 -->
@@ -162,13 +163,13 @@
 <!-- CSS -->
 <style>
   .container {
-    max-width: 1500px;
+    max-width: 1100px;
   }
 
   .custom-card {
     width: 270px;
     height: 330px;
-    border-radius: 18px;
+    border-radius: 20px;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     margin: 5px;
   }
@@ -214,8 +215,61 @@
     }
   }
 </style>
+</section>
 
+  <!-- Footer -->
+  <footer class="text-center text-lg-start text-dark" style="background-color: #f2f2f2; font-family: 'Poppins', sans-serif;">
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <div class="me-5 d-none d-lg-block">
+      <span>Terhubung dengan kami di media sosial:</span>
+    </div>
 
+    <div>
+      <a href="#" class="me-4 text-reset">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="#" class="me-4 text-reset">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="#" class="me-4 text-reset">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="#" class="me-4 text-reset">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </div>
+  </section>
+
+  <section>
+    <div class="container text-center text-md-start mt-4">
+      <div class="row mt-3">
+        <div class="col-md-4 col-lg-4 col-xl-3 mx-auto mb-4">
+          <h6 class="text-uppercase fw-bold mb-3">Sistem Pakar Servis Komputer</h6>
+          <p>
+            Aplikasi berbasis web yang membantu pengguna menganalisis permasalahan komputer secara cepat dan akurat melalui sistem pakar.
+          </p>
+        </div>
+
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <h6 class="text-uppercase fw-bold mb-3">Navigasi</h6>
+          <p><a href="index.php" class="text-reset">Home</a></p>
+          <p><a href="#alur" class="text-reset">Alur Kerja</a></p>
+        </div>
+
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <h6 class="text-uppercase fw-bold mb-3">Kontak</h6>
+          <p><i class="fas fa-home me-3"></i> Jakarta, Indonesia</p>
+          <p><i class="fas fa-envelope me-3"></i> info@serviskomputer.com</p>
+          <p><i class="fas fa-phone me-3"></i> +62 812 3456 7890</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="text-center p-3" style="background-color: #e0e0e0;">
+    © 2025 Sistem Pakar Servis Komputer. All rights reserved.
+  </div>
+</footer>
 
 
 
