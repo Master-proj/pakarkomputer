@@ -48,77 +48,112 @@
 <body>
     <!-- Content2 -->
 <div class="container mt-5">
-<h2 style="font-weight: bold;text-align: center;">Masalah Umum</h2>
+  <h2 style="font-weight: bold; text-align: center;">Masalah Umum</h2>
   <div class="row justify-content-center g-3">
 
+    <!-- Card 1 -->
     <div class="col-auto">
-      <div class="card custom-card shadow-sm text-center">
-        <div class="card-body p-0">
-          <h5 class="card-title fw-bold ">Baterai dan Daya</h5>
-          <img src="gambar/baterai.png" class="card-img-top" alt="Card 1">
-          <p class="card-text px-3 pb-3">Masalah ini berkaitan dengan laptop yang tidak bisa diisi dayanya, cepat habis, atau tiba-tiba mati saat digunakan.</p>
+      <a href="masalahkhusus.php" class="text-decoration-none text-dark">
+        <div class="card custom-card shadow-sm text-center">
+          <div class="card-body p-0">
+            <h5 class="card-title fw-bold">Baterai dan Daya</h5>
+            <img src="gambar/baterai.png" class="card-img-top" alt="Card 1">
+            <p class="card-text px-3 pb-3">
+              Masalah ini berkaitan dengan laptop yang tidak bisa diisi dayanya, cepat habis, atau tiba-tiba mati saat digunakan.
+            </p>
+          </div>
         </div>
-      </div>
+      </a>
     </div>
 
+    <!-- Card 2 -->
     <div class="col-auto">
-      <div class="card custom-card shadow-sm text-center">
-        <div class="card-body p-0">
-          <h5 class="card-title fw-bold">Layar/LCD</h5>
-          <img src="gambar/lcd.png" class="card-img-top" alt="Card 2">
-          <p class="card-text px-3 pb-3">Berhubungan dengan tampilan layar seperti tidak muncul gambar, layar hitam, bergaris, glitch, atau bluescreen.</p>
+      <a href="masalahkhusus.php" class="text-decoration-none text-dark">
+        <div class="card custom-card shadow-sm text-center">
+          <div class="card-body p-0">
+            <h5 class="card-title fw-bold">Layar/LCD</h5>
+            <img src="gambar/lcd.png" class="card-img-top" alt="Card 2">
+            <p class="card-text px-3 pb-3">
+              Berhubungan dengan tampilan layar seperti tidak muncul gambar, layar hitam, bergaris, glitch, atau bluescreen.
+            </p>
+          </div>
         </div>
-      </div>
+      </a>
     </div>
 
+    <!-- Card 3 -->
     <div class="col-auto">
-      <div class="card custom-card shadow-sm text-center">
-        <div class="card-body p-0">
-          <h5 class="card-title fw-bold ">Keyboard & Touchpad</h5>
-          <img src="gambar/keyboard.png" class="card-img-top" alt="Card 3">
-          <p class="card-text px-3 pb-3">Masalah pada tombol yang tidak berfungsi, mengetik sendiri, atau touchpad tidak bisa digerakkan atau tidak responsif.</p>
+      <a href="masalahkhusus.php" class="text-decoration-none text-dark">
+        <div class="card custom-card shadow-sm text-center">
+          <div class="card-body p-0">
+            <h5 class="card-title fw-bold">Keyboard & Touchpad</h5>
+            <img src="gambar/keyboard.png" class="card-img-top" alt="Card 3">
+            <p class="card-text px-3 pb-3">
+              Masalah pada tombol yang tidak berfungsi, mengetik sendiri, atau touchpad tidak bisa digerakkan atau tidak responsif.
+            </p>
+          </div>
         </div>
-      </div>
+      </a>
     </div>
 
+    <!-- Card 4 -->
     <div class="col-auto">
-      <div class="card custom-card shadow-sm text-center">
-        <div class="card-body p-0">
-          <h5 class="card-title fw-bold ">Panas dan Kipas</h5>
-          <img src="gambar/kipas.png" class="card-img-top" alt="Card 4">
-          <p class="card-text px-3 pb-3">"Masalah ini muncul ketika laptop cepat panas, kipas berbunyi keras, atau suhu meningkat meski baru digunakan sebentar.</p>
-</p>
+      <a href="masalahkhusus.php" class="text-decoration-none text-dark">
+        <div class="card custom-card shadow-sm text-center">
+          <div class="card-body p-0">
+            <h5 class="card-title fw-bold">Panas dan Kipas</h5>
+            <img src="gambar/kipas.png" class="card-img-top" alt="Card 4">
+            <p class="card-text px-3 pb-3">
+              Masalah ini muncul ketika laptop cepat panas, kipas berbunyi keras, atau suhu meningkat meski baru digunakan sebentar.
+            </p>
+          </div>
         </div>
-      </div>
+      </a>
     </div>
 
+    <!-- Card 5 -->
     <div class="col-auto">
-      <div class="card custom-card shadow-sm text-center">
-        <div class="card-body p-0">
-          <h5 class="card-title fw-bold ">jaringan (Wi-Fi/Bluetooth)</h5>
-          <img src="gambar/jaringan.png" class="card-img-top" alt="Card 6">
-          <p class="card-text px-3 pb-3">Terkait koneksi internet yang hilang, Wi-Fi tidak bisa tersambung, atau Bluetooth tidak berfungsi.</p>
+      <a href="masalahkhusus.php" class="text-decoration-none text-dark">
+        <div class="card custom-card shadow-sm text-center">
+          <div class="card-body p-0">
+            <h5 class="card-title fw-bold">Jaringan (Wi-Fi/Bluetooth)</h5>
+            <img src="gambar/jaringan.png" class="card-img-top" alt="Card 5">
+            <p class="card-text px-3 pb-3">
+              Terkait koneksi internet yang hilang, Wi-Fi tidak bisa tersambung, atau Bluetooth tidak berfungsi.
+            </p>
+          </div>
         </div>
-      </div>
+      </a>
     </div>
 
+    <!-- Card 6 -->
     <div class="col-auto">
-      <div class="card custom-card shadow-sm text-center">
-        <div class="card-body p-0">
-          <h5 class="card-title fw-bold ">kinerja Laptop</h5>
-          <img src="gambar/kinerja.png" class="card-img-top" alt="Card 6">
-          <p class="card-text px-3 pb-3">Terjadi saat laptop terasa sangat lambat, sering macet, atau program membutuhkan waktu lama untuk terbuka.</p>
+      <a href="masalahkhusus.php" class="text-decoration-none text-dark">
+        <div class="card custom-card shadow-sm text-center">
+          <div class="card-body p-0">
+            <h5 class="card-title fw-bold">Kinerja Laptop</h5>
+            <img src="gambar/kinerja.png" class="card-img-top" alt="Card 6">
+            <p class="card-text px-3 pb-3">
+              Terjadi saat laptop terasa sangat lambat, sering macet, atau program membutuhkan waktu lama untuk terbuka.
+            </p>
+          </div>
         </div>
-      </div>
+      </a>
     </div>
+
+    <!-- Card 7 -->
     <div class="col-auto">
-      <div class="card custom-card shadow-sm text-center">
-        <div class="card-body p-0">
-          <h5 class="card-title fw-bold ">Virus dan Keamanan</h5>
-          <img src="gambar/virus.png" class="card-img-top" alt="Card 6">
-          <p class="card-text px-3 pb-3">Terjadi saat laptop terkena virus, muncul iklan aneh, file hilang, atau sistem bekerja tidak normal.</p>
+      <a href="masalahkhusus.php" class="text-decoration-none text-dark">
+        <div class="card custom-card shadow-sm text-center">
+          <div class="card-body p-0">
+            <h5 class="card-title fw-bold">Virus dan Keamanan</h5>
+            <img src="gambar/virus.png" class="card-img-top" alt="Card 7">
+            <p class="card-text px-3 pb-3">
+              Terjadi saat laptop terkena virus, muncul iklan aneh, file hilang, atau sistem bekerja tidak normal.
+            </p>
+          </div>
         </div>
-      </div>
+      </a>
     </div>
 
   </div>
@@ -138,7 +173,7 @@
     margin: 5px;
   }
 
-  .custom-card:hover {
+  a .custom-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
   }

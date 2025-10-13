@@ -54,7 +54,7 @@
                     </form>
                 </div>
                 <div class="col d-none d-sm-block">
-                    <img width="500" src="gambar\msl_khusus.png" alt="hero" />
+                    <img width="500" src="gambar\alldesain.png" alt="hero" />
                 </div>
             </div>
         </div>
