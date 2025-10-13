@@ -57,7 +57,7 @@
             <p class="mb-4">
               Cek Komputer Yuk! merupakan sistem informasi berbasis Web Based yang memanfaatkan teknologi Sistem Pakar di dalamnya. Dengan menggunakan sistem pakar ini, pengguna dapat mengenali atau memeriksakan keluhan terhadap komputernya hanya dengan menjawab pertanyaan yang diberikan oleh sistem. Setelah itu, pengguna dapat melihat hasil diagnosa dengan representasi persentase kemungkinan kerusakan serta rekomendasi solusi yang dapat dilakukan.
             </p>
-            <a class="btn btn-primary" href="register.php" role="button">Ayo Mulai!</a>
+            <a class="btn btn-primary" href="masalahumum.php" role="button">Ayo Mulai!</a>
           </div>
           <div class="col d-none d-sm-block">
             <img width="500" src="gambar\msl_khusus.png" alt="hero" />
