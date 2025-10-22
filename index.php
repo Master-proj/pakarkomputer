@@ -12,52 +12,39 @@
     <link
       href="https://fonts.googleapis.com/css?family=Poppins:300,400,700&display=swap"
       rel="stylesheet"/>
-    <link rel="stylesheet" href="custom.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
     <title>Fix.CO</title>
     <style>
     </style>
   </head>
   <body>
-    <nav class="navbar py-2 navbar-expand-lg navbar-light">
+    <!-- Navbar -->
+    <nav class="navbar">
       <div class="container">
-        <a class="navbar-brand" href="#">
-          <h2>Pakar COM</h2>
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item align-self-center active">
-              <a class="nav-link" href="index.php"> Home <span class="sr-only">(current)</span>
-              </a>
-            </li>
-            <li class="nav-item align-self-center active">
-              <a class="nav-link"  href="#alur">Alur Kerja <span class="sr-only">(current)</span></a>
-            </li>
-          </ul>
-        </div>
+        <a href="" class="logo">PACCOM</a>
+        <ul class="menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#alurkerja">Alur Kerja</a></li>
+        </ul>
+        <div class="tombol">
+          &#9776;
+        </div> 
       </div>
     </nav>
-
-    <section class="heroBWA mt-5">
+    <!-- Hero Section -->
+    <section id="home" class="heroBWA mt-5">
       <div class="container">
         <div class="row">
           <div class="col align-self-center">
-            <h1 class="mb-4">Cek Komputer Yuk!</h1>
+            <h1 class="mb-5">Cek Komputer Yuk!</h1>
             <p class="mb-4">
               Cek Komputer Yuk! merupakan sistem informasi berbasis Web Based yang memanfaatkan teknologi Sistem Pakar di dalamnya. Dengan menggunakan sistem pakar ini, pengguna dapat mengenali atau memeriksakan keluhan terhadap komputernya hanya dengan menjawab pertanyaan yang diberikan oleh sistem. Setelah itu, pengguna dapat melihat hasil diagnosa dengan representasi persentase kemungkinan kerusakan serta rekomendasi solusi yang dapat dilakukan.
             </p>
-            <a class="btn btn-primary" href="masalahumum.php" role="button">Ayo Mulai!</a>
+            <!-- tag button --> 
+            <button class="button-17" role="button" href="masalahumum.php">Coba Sekarang</button>
           </div>
           <div class="col d-none d-sm-block">
             <img width="500" src="gambar\msl_khusus.png" alt="hero" />
@@ -66,11 +53,11 @@
       </div>
     </section>
 
-    <section id="alur" style="margin-bottom: 50px;">
+    <section id="alurkerja" style="margin-bottom: 50px;">
       <!--Content2-->
+      <h2 style="font-weight: bold;text-align: center;">Alur Kerja Sistem Pakar Servis Komputer!</h2>
       <div id="konten2" class="container konten">
-        <h2 style="font-weight: bold;text-align: center;">Alur Kerja Sistem Pakar Servis Komputer!</h2>
-        <div class="card-deck">
+         <div class="card-deck">
           <div class="card">
             <h5 class="card-title">Memilih Masalah Umum</h5>
             <img src="gambar\msl_umum.png" class="card-img-top" alt="...">
@@ -82,7 +69,7 @@
           </div>
           <div class="card">
             <h5 class="card-title">Memilih masalah khusus</h5>
-            <img src="gambar\msl_khusus.png" class="card-img-top" alt="...">
+            <img src="gambar\herobaru.png" class="card-img-top" alt="...">
             <div class="card-body">
               <p class="card-text">
                 Setelah menentukan masalah umum, pengguna akan diarahkan untuk memilih permasalahan yang lebih spesifik sesuai dengan gejala atau kerusakan yang dialami. Proses ini bertujuan untuk mempersempit cakupan analisis sehingga sistem dapat memberikan hasil yang lebih akurat dan relevan.
@@ -104,59 +91,52 @@
 
 
     <!-- Footer -->
-<footer class="text-center text-lg-start text-dark" style="background-color: #f2f2f2; font-family: 'Poppins', sans-serif;">
-  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-    <div class="me-5 d-none d-lg-block">
-      <span>Terhubung dengan kami di media sosial:</span>
-    </div>
+    <footer class="bg-dark text-white text-center text-lg-start mt-5">
+      <div class="container p-4">
+        <div class="row">
+          <!-- Kolom 1 -->
+          <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">About Me</h5>
+            <p>
+              Cek Laptop adalah sistem pakar untuk mendiagnosis masalah komputer dengan cepat dan akurat.
+            </p>
+          </div>
 
-    <div>
-      <a href="#" class="me-4 text-reset">
-        <i class="fab fa-facebook-f"></i>
-      </a>
-      <a href="#" class="me-4 text-reset">
-        <i class="fab fa-twitter"></i>
-      </a>
-      <a href="#" class="me-4 text-reset">
-        <i class="fab fa-instagram"></i>
-      </a>
-      <a href="#" class="me-4 text-reset">
-        <i class="fab fa-linkedin"></i>
-      </a>
-    </div>
-  </section>
+          <!-- Kolom 2 -->
+          <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Contact</h5>
+            <ul class="list-unstyled mb-0">
+              <li><i class="fas fa-map-marker-alt me-2"></i> Semarang, Indonesia</li>
+              <li><i class="fas fa-envelope me-2"></i> support@ceklaptop.com</li>
+              <li><i class="fas fa-phone me-2"></i> +62 812 3456 7890</li>
+            </ul>
+          </div>
 
-  <section>
-    <div class="container text-center text-md-start mt-4">
-      <div class="row mt-3">
-        <div class="col-md-4 col-lg-4 col-xl-3 mx-auto mb-4">
-          <h6 class="text-uppercase fw-bold mb-3">Sistem Pakar Servis Komputer</h6>
-          <p>
-            Aplikasi berbasis web yang membantu pengguna menganalisis permasalahan komputer secara cepat dan akurat melalui sistem pakar.
-          </p>
-        </div>
-
-        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-          <h6 class="text-uppercase fw-bold mb-3">Navigasi</h6>
-          <p><a href="index.php" class="text-reset">Home</a></p>
-          <p><a href="#alur" class="text-reset">Alur Kerja</a></p>
-        </div>
-
-        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-          <h6 class="text-uppercase fw-bold mb-3">Kontak</h6>
-          <p><i class="fas fa-home me-3"></i> Jakarta, Indonesia</p>
-          <p><i class="fas fa-envelope me-3"></i> info@serviskomputer.com</p>
-          <p><i class="fas fa-phone me-3"></i> +62 812 3456 7890</p>
+          <!-- Kolom 3 -->
+          <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Follow Me</h5>
+            <a href="#" class="text-white me-3"><i class="fab fa-facebook fa-lg"></i></a>
+            <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-lg"></i></a>
+            <a href="#" class="text-white me-3"><i class="fab fa-twitter fa-lg"></i></a>
+            <a href="#" class="text-white"><i class="fab fa-youtube fa-lg"></i></a>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+      <!-- Garis pemisah -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2025 CekLaptop. All Rights Reserved.
+      </div>
+    </footer>
 
-  <div class="text-center p-3" style="background-color: #e0e0e0;">
-    © 2025 Sistem Pakar Servis Komputer. All rights reserved.
-  </div>
-</footer>
-
+    <!-- Tambahkan link Bootstrap & Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
   </body>
   <script
     src="https://code.jquery.com/jquery-3.4.1.js"
