@@ -41,10 +41,10 @@
           <div class="col align-self-center">
             <h1 class="mb-5">Cek Komputer Yuk!</h1>
             <p class="mb-4">
-              Cek Komputer Yuk! merupakan sistem informasi berbasis Web Based yang memanfaatkan teknologi Sistem Pakar di dalamnya. Dengan menggunakan sistem pakar ini, pengguna dapat mengenali atau memeriksakan keluhan terhadap komputernya hanya dengan menjawab pertanyaan yang diberikan oleh sistem. Setelah itu, pengguna dapat melihat hasil diagnosa dengan representasi persentase kemungkinan kerusakan serta rekomendasi solusi yang dapat dilakukan.
+              Merupakan sistem informasi berbasis Web Based yang memanfaatkan teknologi Sistem Pakar di dalamnya. Dengan menggunakan sistem pakar ini, pengguna dapat mengenali atau memeriksakan keluhan terhadap komputernya hanya dengan menjawab pertanyaan yang diberikan oleh sistem. Setelah itu, pengguna dapat melihat hasil diagnosa dengan representasi persentase kemungkinan kerusakan serta rekomendasi solusi yang dapat dilakukan.
             </p>
             <!-- tag button --> 
-            <button class="button-17" role="button" href="masalahumum.php">Coba Sekarang</button>
+            <a href="masalahumum.php" class="button-17" >Coba Sekarang</a>
           </div>
           <div class="col d-none d-sm-block">
             <img width="500" src="gambar\msl_khusus.png" alt="hero" />

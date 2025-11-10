@@ -116,11 +116,14 @@ body {
 .text-center {
   text-align: right;
   margin-top: 30px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
 }
 
-.btn-home {
+.btn-home,
+.btn-pdf {
   display: inline-block;
-  background: linear-gradient(90deg, #007bff, #0056b3);
   color: white;
   padding: 12px 28px;
   border-radius: 50px;
@@ -129,12 +132,28 @@ body {
   font-weight: 600;
   box-shadow: 0 4px 12px rgba(0, 0, 80, 0.2);
   transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-home {
+  background: linear-gradient(90deg, #007bff, #0056b3);
 }
 
 .btn-home:hover {
   background: linear-gradient(90deg, #0056b3, #004099);
   transform: translateY(-3px);
   box-shadow: 0 6px 15px rgba(0, 0, 100, 0.25);
+}
+
+.btn-pdf {
+  background: linear-gradient(90deg, #ff8a00, #ff5722);
+}
+
+.btn-pdf:hover {
+  background: linear-gradient(90deg, #ff6a00, #e64a19);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(255, 87, 34, 0.3);
 }
 
 /* ===== Animation ===== */
@@ -166,6 +185,13 @@ body {
   }
 
   .text-center {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn-home,
+  .btn-pdf {
+    width: 80%;
     text-align: center;
   }
 }

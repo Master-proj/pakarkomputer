@@ -23,16 +23,11 @@
       overflow-x: hidden;
     }
 
-    .navbar {
-      background: #fff;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-    }
-
     .test {
       display: flex;
       align-items: center;
       justify-content: center;
-      min-height: 90vh;
+      min-height: 100vh;
     }
 
     .question-container {
@@ -47,13 +42,13 @@
       max-width: 1100px;
     }
 
-    /* Bagian pertanyaan interaktif */
     .question-box {
       flex: 1;
       padding-right: 40px;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
       border-radius: 15px;
       padding: 30px;
+      animation: fadeInLeft 0.8s ease forwards;
     }
 
     .question-box:hover {
@@ -108,7 +103,6 @@
       border-radius: 10px;
     }
 
-    /* Animasi masuk dari kiri */
     @keyframes fadeInLeft {
       from {
         opacity: 0;
@@ -118,10 +112,6 @@
         opacity: 1;
         transform: translateX(0);
       }
-    }
-
-    .question-box {
-      animation: fadeInLeft 0.8s ease forwards;
     }
 
     @media (max-width: 992px) {
@@ -142,28 +132,19 @@
 </head>
 
 <body>
-  <!-- NAVBAR -->
-  <nav class="navbar py-2 navbar-expand-lg navbar-light">
-    <div class="container">
-    <a class="navbar-brand" href="#">
-          <h2>Pakar COM</h2>
-        </a>
-    </div>
-  </nav>
-
   <!-- MAIN CONTENT -->
   <section class="test">
     <div class="question-container">
       <!-- Kiri -->
       <div class="question-box">
-        <h2>Apakah komputer Anda mengalami gejala berikut?</h2>
+        <h2>Apakah laptop Anda cepat panas dan kipas bersuara keras?</h2>
         <form action="" method="post" enctype="multipart/form-data" role="form">
-          <input type="submit" class="btn btn-primary mr-3" name="ya" value="Ya">
+          <input type="submit" class="btn btn-primary mr-3" name="ya" value="Ya" formaction="analisis.php">
           <input type="submit" class="btn btn-danger" name="tidak" value="Tidak">
         </form>
       </div>
 
-      <!-- Kanan (gambar dekoratif, tanpa animasi) -->
+      <!-- Kanan -->
       <div class="image-box">
         <img src="gambar/alldesain.png" alt="Ilustrasi visual" />
       </div>
