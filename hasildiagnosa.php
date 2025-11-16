@@ -108,12 +108,12 @@ session_destroy();
             <h2 class="card-title">Saran Perbaikan</h2>
             <div class="card-content">
                 
-                <div class="info-box">
+                <div class="info-box">  
                     <div class="info-box-title">🔧 Solusi DIY (Do It Yourself):</div>
                     <div class="info-box-content">
                         <?php 
                             // nl2br() akan mengubah line break (\n) menjadi tag <br>
-                            echo nl2br(htmlspecialchars($data_hasil['solusi_aman_diy'])); 
+                            echo nl2br($data_hasil['solusi_aman_diy']); 
                         ?>
                     </div>
                 </div>
@@ -131,7 +131,7 @@ session_destroy();
                     <div class="info-box-title">🏪 Rekomendasi Servis (Catatan untuk Teknisi):</div>
                     <div class="info-box-content">
                         <?php 
-                            echo nl2br(htmlspecialchars($data_hasil['catatan_teknisi'])); 
+                            echo nl2br($data_hasil['catatan_teknisi']); 
                         ?>
                     </div>
                 </div>
