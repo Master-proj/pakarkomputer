@@ -9,7 +9,7 @@ if (session_status() === PHP_SESSION_NONE) {
 $db_host = 'localhost';     // Biasanya 'localhost'
 $db_user = 'root';          // User default XAMPP
 $db_pass = '';              // Password default XAMPP (kosong)
-$db_name = 'db_sistem_pakar_laptop'; // Nama database yang Anda buat tadi
+$db_name = 'db_pakar'; // Nama database yang Anda buat tadi
 
 // --- AKHIR PENGATURAN ---
 
